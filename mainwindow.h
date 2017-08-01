@@ -14,9 +14,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void draw();
+    void setXRange(QString);
+    void setYRange(QString);
 
-public slots:
-    void addTask();
 
 private:
     Ui::MainWindow *ui;

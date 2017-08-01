@@ -6,7 +6,8 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = Qt_convex_hull
 TEMPLATE = app
@@ -25,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp\
-    algo_num.cpp
+    algo_num.cpp \
+    qcustomplot.cpp
 
 HEADERS  += mainwindow.h \ 
     my_algo.h \
     points.h \
-    polar_angle.h
+    polar_angle.h \
+    qcustomplot.h
 
 FORMS    += mainwindow.ui
 
