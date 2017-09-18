@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVector>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,7 @@ public:
     void draw();
     void setXRange(QString);
     void setYRange(QString);
+    void drawGraph(QVector<double> x, QVector<double> y);
 
 
 private:
